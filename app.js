@@ -20,8 +20,8 @@ mongoose.connect(process.env.mongiURI).then(() => console.log("Connected!"));
 app.use(express.json());
 
 app.get("/first-api", (req, res) => {
-	const fullName = "Bano Qabil";
-	res.status(201).send("First Api is running " + fullName);
+  const fullName = "Bano Qabil";
+  res.status(201).send("First Api is running " + fullName);
 });
 
 app.use("/users", userRouter);
